@@ -1,5 +1,24 @@
 # Temperature Converter
 
+## Usage 
+```
+$ node temperature.js 
+```
+Will give the basic output. 
+
+If you want to change the number to be converted, simply do:
+```
+$ TEMP=<yourtemp> node temperature.js
+```
+
+Example:
+```
+$ TEMP=92 node temperature.js
+// Today’s temperature is 92°F, which is 33°C.
+```
+
+### from original
+
 [![Join the chat at https://gitter.im/unioncollege-webtech/temperature-converter](https://badges.gitter.im/unioncollege-webtech/temperature-converter.svg)](https://gitter.im/unioncollege-webtech/temperature-converter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Define functions to convert between celsius and fahrenheit.

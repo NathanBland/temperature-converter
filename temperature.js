@@ -8,7 +8,7 @@ var Temperature = {
   }
 }
 
-var tempToday = process.env.temp || 82
+var tempToday = process.env.TEMP || 82
 var tempInCelsius = Math.round(Temperature.toCelsius(tempToday))
-var message = 'Today’s temperature is' + tempToday + '°F, which is ' + tempInCelsius + '°C.'
+var message = 'Today’s temperature is ' + tempToday + '°F, which is ' + tempInCelsius + '°C.'
 console.log(message)
