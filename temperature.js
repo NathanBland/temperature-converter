@@ -1,14 +1,14 @@
 // passes js standard test: https://github.com/feross/standard
-var Temperature = {
-  toFahrenheit: function (celsius) {
+const Temperature = {
+  toFahrenheit: (celsius) => {
     return celsius * (9 / 5) + 32
   },
-  toCelsius: function (fahrenheit) {
+  toCelsius: (fahrenheit) => {
     return (fahrenheit - 32) * (5 / 9)
   }
 }
 
-var tempToday = process.env.TEMP || 82
-var tempInCelsius = Math.round(Temperature.toCelsius(tempToday))
-var message = 'Today’s temperature is ' + tempToday + '°F, which is ' + tempInCelsius + '°C.'
+let tempToday = process.env.TEMP || 82
+let tempInCelsius = Math.round(Temperature.toCelsius(tempToday))
+let message = `Today’s temperature is ${tempToday}°F, which is ${tempInCelsius}°C.`
 console.log(message)
